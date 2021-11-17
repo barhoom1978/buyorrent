@@ -1,0 +1,42 @@
+.hooftitels, .form-control {
+    font-family: sans-serif;
+    text-align: center;
+}
+
+.div_login, .div_reg {
+    font-family: sans-serif;
+    text-align: center;
+    width: 300px;
+    margin-left: auto;
+    margin-right: auto;
+
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.container > .form-group {
+    text-align: center;
+    margin: 10px;
+    padding: 0px;
+    width: 260px;
+}
+
+.card {
+    margin-left: auto;
+    margin-right: auto;
+    width: 30rem;
+}
+
+/* hide descriptions when screen is small */
+@media only screen and (max-width: 600px) {
+    .beskrywings, #show_detailed_calcs_button, #show_table, #list_of_notes {
+        display: none;
+    }
+    .card {
+        width: 15rem;
+    }
+}

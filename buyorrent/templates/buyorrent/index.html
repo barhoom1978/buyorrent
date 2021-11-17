@@ -1,0 +1,33 @@
+{% extends 'buyorrent/layout.html' %}
+{% load static %}
+
+{% block script %}
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+{% endblock %}
+
+{% block body %}
+
+<div class="hooftitels">
+    <br>
+    <h3>Overview</h3>
+</div>
+
+<div class="container">
+    <p>Buying or renting a property is a question many people grapple with. This calculator attempts to shed some light on the financial implications of choosing the one over the other.
+    <br><br>The following assumptions underlies this calculator.</p>
+    <ul>
+        <li>no buying or renting transaction has taken place yet</li>
+        <li>the residence to be bought or to be rented are identical or near identical</li>
+        <li>the comparison is only financial, it does not consider practical implications eg, a landlord who do not wish to renew a rental agreement</li>
+        <li>the monthly <span style='color:blue'>cashflow</span> for the renting option and the buying option is <span style='color:blue'>equalised</span>, this means that the <span style='font-weight:bold'>difference</span> between what you would pay to rent (ie, monthly rent) or buy (ie, monthly mortgage) is <span style='font-weight:bold'>invested</span> in the <span style='font-weight:bold'>stock market</span>; the renter’s deposit is also assumed to be invested in the stock market</li>
+        <li>the calculator looks at the difference in outcomes over 10 years</li>
+    </ul>
+</div>
+
+<div class="container">
+    <div class="form-group">
+        Go to <a href="{% url 'input' %}">input</a> page
+    </div>
+</div>
+
+{% endblock %}

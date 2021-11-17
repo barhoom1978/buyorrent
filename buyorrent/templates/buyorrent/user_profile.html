@@ -1,0 +1,58 @@
+{% extends 'buyorrent/layout.html' %}
+{% load static %}
+
+{% block script %}
+    <script src="{% static 'buyorrent/user_profile.js' %}"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+
+{% endblock %}
+
+{% block body %}
+    <div class="hooftitels">
+        <br>
+        <h3>Scenarios</h3>
+        <h6 class="beskrywings">Scenarios saved by {{ user.username }}</h6>
+    </div>
+
+    {% for scenario in scenarios %}
+    <div class="card">
+        <div class="card-body">
+            {{scenario.summary}} <br>
+            On {{scenario.timestamp}} <br><br>
+            Input: <br>
+            House price £{{scenario.houseprice}} / Deposit £{{scenario.deposit}} /
+            Rate={{scenario.interest_rate}}% <br>
+            Building fees £{{scenario.buildingfees}} / Maintenance costs £{{scenario.maintenancecosts}}
+            / Rent £{{scenario.rent}} <br>
+            Renters insurance £{{scenario.rentersinsurance}} / Inflation {{scenario.inflation}}% <br>
+            FTSE 100 growth {{scenario.growth_ftse}}% / House market growth {{scenario.growth_house}}%
+            <br><br>
+            <button data-id="{{scenario.id}}" class="btn btn-primary btn-xs">Open</button>
+            <button data-id="{{scenario.id}}" class="btn btn-link btn-sm float-right">Delete</button>
+            <div id="div_results{{scenario.id}}" class="div_results">
+                <br>
+                <div class="form-group">
+                    <label>Buying</label>
+                    <p id='summary_buy{{scenario.id}}'></p>
+                </div>
+                <div class="form-group">
+                    <label>Renting</label>
+                    <p id='summary_rent{{scenario.id}}'></p>
+                </div>
+                <div class="form-group">
+                    <label>Summary</label>
+                    <p id='summary{{scenario.id}}'></p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <br>
+    {% endfor %}
+    <br>
+
+    <div class="container">
+        <div class="form-group">
+            Go to <a href="{% url 'input' %}">input</a> page
+        </div>
+    </div>
+{% endblock %}

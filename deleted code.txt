@@ -1,0 +1,94 @@
+# *************** Deleted code ***** JS
+# document.addEventListener('DOMContentLoaded', hi_there)
+#
+# function hi_there () {
+#     // alert('hello...')
+# }
+# window.scrollBy(0, 300);
+# window.location.href = '/results'
+# const sentence = "It is £" + add_commas(result.buyer_net_position.toFixed(0))
+# var tableData = result.tableData;
+# console.log(tableData);
+# window.location.href = '/user_profile'
+# console.log(this)
+# console.log(this.dataset.id);
+# console.log(this.innerHTML);
+# alert("Delete this scenario?")
+# console.log(result);
+# console.log('summary_buy'+scenario_id);
+
+# *************** Deleted code ***** python
+# msg = "houseprice: " + str(houseprice) + ", deposit: " + str(deposit)
+# msg += ", interest_rate: " + str(interest_rate)
+# msg += ", buildingfees: " + str(buildingfees) + ", maintenancecosts: " + str(maintenancecosts)
+# msg += ", rent: " + str(rent) + ", rentersinsurance: " + str(rentersinsurance)
+# msg += ", inflation: " + str(inflation) + ", growth_ftse: " + str(growth_ftse)
+# msg += ", growth_house: " + str(growth_house)
+#     df.to_excel("/Users/ab/Downloads/output.xlsx")
+#     df.to_excel("/Users/ab/Downloads/output.xlsx")
+#     COLUMN_NAMES = ['year', 'rent', 'new_investment_renter', 'old_investment_deposit',
+#                     'renters_cashflow', 'pre_inv_diff', 'mortgage_interest_payments',
+#                     'mortgage_capital_payments','fees_and_maintenance','new_investment_buyer',
+#                     'buyers_cashflow'
+#                     ]
+# df.to_excel("/Users/ab/Downloads/output.xlsx")
+# df2.to_excel("/Users/ab/Downloads/output.xlsx")
+#
+# msg = f"User: {request.user}, hp: {houseprice}, dp: {deposit}, ir: {interest_rate},"
+#
+# file2write=open("/Users/ab/Downloads/temp_abraham_01.txt",'w')
+# file2write.write(msg)
+# file2write.close()
+#
+# msg = "houseprice: " + str(houseprice) + ", growth_house: " + str(growth_house)
+# file2write=open("/Users/ab/Downloads/temp_abraham_01.txt",'w')
+# file2write.write(msg)
+# file2write.close()
+# return HttpResponseBadRequest()
+#
+# show the data as it's now
+# msg = "houseprice: " + str(houseprice) + ", deposit: " + str(deposit)
+# msg += ", interest_rate: " + str(interest_rate) + ", buildingfees: " + str(buildingfees)
+# msg += ", maintenancecosts: " + str(maintenancecosts) + ", rent: " + str(rent)
+# msg += ", rentersinsurance: " + str(rentersinsurance) + ", inflation: " + str(inflation)
+# msg += ", growth_ftse: " + str(growth_ftse) + ", growth_house: " + str(growth_house)
+# file2write=open("/Users/ab/Downloads/data001.txt",'w')
+# file2write.write(msg)
+# file2write.close()
+
+# *************** Deleted code ***** HTML
+# {% csrf_token %}
+
+# *************** Deleted code ***** general notes
+# Map
+# Send the id to do_fin_calcs
+# Get the scenario from models query call
+# calculate all the usual
+# send the usual and the input data back to fetch request
+# open the input page
+# populate the input boxes, update the result divs
+# use shortcut to test this route:
+# - send id to do_fin_calcs,
+# - do no calcs, just add arb number to it
+# - send adjusted number back to client
+# - open input tab, populate adjusted number in houseprice field
+# - check if it all looks like imagined
+
+# *************** TO DOs
+# - check if csrf token works with just a div
+# - check how to use name property of html element in js ajax type requests
+# - remember to specifiy libraries to download to run file
+# - spell check all annotations
+
+# *************** Resources
+# Rendering Data-Frame to html template in table view using Django Framework
+# https://www.geeksforgeeks.org/rendering-data-frame-to-html-template-in-table-view-using-django-framework/
+#
+# Forms (where you got the submit button from)
+# https://getbootstrap.com/docs/4.0/components/forms/
+#
+# Old bootstrap used for wells:
+# https://www.w3schools.com/bootstrap/bootstrap_buttons.asp
+#
+# New bootdstrap used with cards:
+# https://getbootstrap.com/docs/4.5/components/card/
